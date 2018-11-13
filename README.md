@@ -1,4 +1,5 @@
-# A Blank PhoneGap App
+# One Line a Day
+One line a Day is a journelling application which will allow users to enter the highlight of their day in under 250 characters.
 
 ## Usage
 
