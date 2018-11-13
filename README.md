@@ -7,7 +7,7 @@ Unlike any other journelling application, One Line a Day limits the amount of ch
 
 What is unique about your app? What are the best features?
 
-
+Our app has a clear and simple purpose and a minimal design has been kept in mind in order to keep it intuitive and effortless for anyone to use.
 
 
 
