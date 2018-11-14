@@ -1,5 +1,7 @@
 {
   "name": "one_line_a_day",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
