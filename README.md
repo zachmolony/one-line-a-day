@@ -1,7 +1,7 @@
 <img src="https://github.com/zachmolony/one-line-a-day/blob/master/Design/logo-alt1.png" alt="logo" width="220"/>
 
 
-***This product is currently still in design phase, see the Xd prototype [here](https://github.com/zachmolony/one-line-a-day/blob/master/Design/design.xd)***
+***This product is currently still in development, see the Xd prototype [here](https://github.com/zachmolony/one-line-a-day/blob/master/Design/design.xd)***
 
 ## One Line...
 
