@@ -16,4 +16,9 @@ export class BinderService {
     this.binder.push(entry);
   }
 
+  // return a copy of binder contents
+  getAllEntries() {
+    return [...this.binder] // spread operator
+  }
+
 }
