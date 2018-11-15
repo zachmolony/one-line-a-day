@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the AddEntryPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { BinderService } from '../../providers/binder/binder';
 
 @IonicPage()
 @Component({
@@ -15,11 +9,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AddEntryPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+    public navParams: NavParams,
+    private binderService: BinderService) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AddEntryPage');
+  saveEntry(entry: {title: string}) {
+    this.binderService.saveEntry(entry);
   }
 
 }

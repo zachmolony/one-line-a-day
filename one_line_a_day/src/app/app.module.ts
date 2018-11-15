@@ -7,7 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AddEntryPage } from '../pages/add-entry/add-entry';
-import { BinderProvider } from '../providers/binder/binder';
+import { BinderService } from '../providers/binder/binder';
 import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
@@ -31,7 +31,7 @@ import { IonicStorageModule } from '@ionic/storage';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    BinderProvider
+    BinderService
   ]
 })
 export class AppModule {}
