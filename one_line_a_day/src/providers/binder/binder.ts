@@ -7,7 +7,7 @@ export class BinderService {
 
   private binder: { title: string } [] = [];
 
-  constructor(public http: HttpClient) {
+  constructor() {
 
   }
 
