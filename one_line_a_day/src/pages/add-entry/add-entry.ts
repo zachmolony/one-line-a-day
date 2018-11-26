@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { BinderService } from '../../providers/binder/binder';
+import { Entry } from '../../models/note.model';
 
 @IonicPage()
 @Component({
@@ -10,11 +11,11 @@ import { BinderService } from '../../providers/binder/binder';
 export class AddEntryPage {
 
   constructor(public navCtrl: NavController,
-    public navParams: NavParams,
     private binderService: BinderService) {
   }
 
-  saveEntry(entry: {title: string}) {
+  // invokes saveEntry from binderService
+  saveEntry(entry: Entry) {
     this.binderService.saveEntry(entry);
   }
 
