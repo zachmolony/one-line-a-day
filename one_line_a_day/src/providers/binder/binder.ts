@@ -1,11 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
+import { Entry } from '../../models/note.model';
 
 @Injectable()
 export class BinderService {
 
-  private binder: { title: string } [] = [];
+  private binder: Entry[] = [];
 
   constructor() {
 
