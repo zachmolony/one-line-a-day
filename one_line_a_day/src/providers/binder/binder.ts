@@ -8,18 +8,27 @@ export class BinderService {
 
   private binder: Entry[] = [];
 
-  constructor() {
+  constructor(public storage: Storage) {
 
   }
 
   // push new note to binder
-  saveEntry(entry: {title: string}) {
+  saveEntry(entry: Entry) {
+    entry.createDate = Date.now();
     this.binder.push(entry);
+    // assign binder to 'binder' key
+    this.storage.set('binder', this.binder);
   }
 
   // return a copy of binder contents
   getAllEntries() {
-    return [...this.binder] // spread operator
+    return this.storage.get('binder').then(
+      (binder) => {
+        // handle empty binder
+        this.binder = binder === null ? [] : binder;
+        return [...this.binder];
+      }
+    )
   }
 
 }
